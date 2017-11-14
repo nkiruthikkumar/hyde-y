@@ -6,12 +6,20 @@ Style with support for rainbow parens
 
 .hljs {
   display: block;
-  overflow-x: auto;
+  overflow-x: scroll;
   padding: 0.5em;
   background: #474949;
   color: #d1d9e1;
 }
 
+pre, code {
+  white-space: pre;
+}
+
+pre > code > *
+{
+  padding-right: 1em;
+}
 
 .hljs-comment,
 .hljs-quote {
